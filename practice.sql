@@ -1,0 +1,57 @@
+-- CREATE DATABASE `test`;
+-- SHOW DATABASES;
+-- DROP DATABASE `test`;
+-- USE `test`
+-- INT DECIMAL(TATAL , LITTLE) VARCHAR(TOTAL) BLOB DATE TIMESTAMP
+-- CREATE TABLE `student`(
+-- 	    `student_id` INT NOT NULL AUTO_INCREMENT,
+--      `name` VARCHAR(10) UNIQUE,
+--      `major` VARCHAR(4) DEFAULT 'undecided',
+--      PRIMARY KEY(`student` , `name`)[composite key]
+-- );
+-- DESCRIBE `student`;
+-- DROP TABLE `student`;
+-- ALTER TABLE `student` ADD `gpa` DECIMAL(3 , 2);
+-- ALTER TABLE `student` DROP COLUMN `gpa`; 
+-- SELECT * FROM `student`;
+-- INSERT INTO `student`(`student_id` , `name` , `major`) VALUES(1 , 'white' , 'history');
+-- UPDATE `student` SET `major` = 'good' WHERE `major` = 'history'
+-- DELETE FROM `student` WHERE `student_id` = 3;
+-- SELECT * FROM `student` ORDER BY `student_id` , `name` ASC[DESC] LIMIT 2;
+-- SELECT * FROM `student` WHERE `major` IN('history' , 'good');
+-- SELECT COUNT(*)[COUNT(`name`)] FROM `student`;
+-- SELECT AVG(`student_id`) FROM `student`;
+-- SELECT SUM(`student_id`) FROM `student`;
+-- SELECT MAX(`student_id`) FROM `student`;
+-- SELECT MIN(`student_id`) FROM `student`;
+-- SELECT * FROM `student` WHERE `name` LIKE '_e%';[yellow]
+-- SELECT `name` AS all FROM `student`
+-- UNION
+-- SELECT `major` FROM `student`;
+-- SELECT * FROM `student` [LEFT JOIN][RIGHT JOIN]JOIN `student1` ON `student`.`major` = `student1`.`major1`;
+-- SELECT * FROM `student` WHERE `major` = (SELECT `major` FROM `student1` WHERE `major1` = 'history');
+-- ALTER TABLE `student` ADD FOREIGN KEY(`student_id`) REFERENCES `student1`(`student_id`) ON DELETE CASCADE[ON DELETE SET NULL];
+--  GROUP BY HAVING
+-- CASE WHEN THEN ELSE END AS
+-- CREATE INDEX ON DROP INDEX ON `student`(`student_id`);
+-- CREATE USER `user`@`localhost` IDENTIFIED BY 'password';
+-- GRANT ON TO REVOKE ON FROM SHOW GRANTS FOR
+-- DELIMITER //
+-- CREATE PROCEDURE `get_student`()
+-- BEGIN
+--     SELECT * FROM `student`;
+-- END; //
+-- DELIMITER ;
+-- CALL `get_student`();
+-- DELIMITER //
+-- CREATE TRIGGER `before_student_insert`[`after_student_insert`]
+-- BEFORE[AFTER] INSERT ON `student`
+-- FOR EACH ROW
+-- BEGIN
+--     INSERT INTO `student1` VALUES(NEW.`student_id` , NEW.`name` , NEW.`major`);
+-- END;//
+-- DELIMITER ;
+-- CREATE VIEW `student_view` AS
+--     SELECT `student_id` , `name` FROM `student`;
+--     WITH CHECK OPTION;
+-- SELECT * FROM `student_view`;
