@@ -1,6 +1,6 @@
 # SQL 查詢與交易練習
 
-**目前共 50 個實作練習單元。** 完整題號、來源與執行方式見 [CATALOG.md](CATALOG.md)，機器可讀清單見 [EXERCISES.json](EXERCISES.json)。
+完整題號、來源與執行方式見 [CATALOG.md](CATALOG.md)，機器可讀清單見 [EXERCISES.json](EXERCISES.json)。
 
 以下保留起步練習的說明；其餘題目按完整目錄閱讀。
 
