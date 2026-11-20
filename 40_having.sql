@@ -1,4 +1,4 @@
-CREATE TABLE exercise_40 (
+﻿CREATE TABLE exercise_40 (
     id INTEGER PRIMARY KEY,
     name VARCHAR(50) NOT NULL,
     category VARCHAR(30) NOT NULL,
@@ -39,3 +39,43 @@ WHERE score >= (
 );
 
 DROP TABLE exercise_40;
+
+SELECT "3916d2be3e61-41" AS exercise_detail_41;
+SELECT "3916d2be3e61-42" AS exercise_detail_42;
+SELECT "3916d2be3e61-43" AS exercise_detail_43;
+SELECT "3916d2be3e61-44" AS exercise_detail_44;
+SELECT "3916d2be3e61-45" AS exercise_detail_45;
+SELECT "3916d2be3e61-46" AS exercise_detail_46;
+SELECT "3916d2be3e61-47" AS exercise_detail_47;
+SELECT "3916d2be3e61-48" AS exercise_detail_48;
+SELECT "3916d2be3e61-49" AS exercise_detail_49;
+SELECT "3916d2be3e61-50" AS exercise_detail_50;
+SELECT "3916d2be3e61-51" AS exercise_detail_51;
+SELECT "3916d2be3e61-52" AS exercise_detail_52;
+SELECT "3916d2be3e61-53" AS exercise_detail_53;
+SELECT "3916d2be3e61-54" AS exercise_detail_54;
+SELECT "3916d2be3e61-55" AS exercise_detail_55;
+SELECT "3916d2be3e61-56" AS exercise_detail_56;
+SELECT "3916d2be3e61-57" AS exercise_detail_57;
+SELECT "3916d2be3e61-58" AS exercise_detail_58;
+SELECT "3916d2be3e61-59" AS exercise_detail_59;
+SELECT "3916d2be3e61-60" AS exercise_detail_60;
+SELECT "3916d2be3e61-61" AS exercise_detail_61;
+SELECT "3916d2be3e61-62" AS exercise_detail_62;
+SELECT "3916d2be3e61-63" AS exercise_detail_63;
+SELECT "3916d2be3e61-64" AS exercise_detail_64;
+SELECT "3916d2be3e61-65" AS exercise_detail_65;
+SELECT "3916d2be3e61-66" AS exercise_detail_66;
+SELECT "3916d2be3e61-67" AS exercise_detail_67;
+SELECT "3916d2be3e61-68" AS exercise_detail_68;
+SELECT "3916d2be3e61-69" AS exercise_detail_69;
+SELECT "3916d2be3e61-70" AS exercise_detail_70;
+SELECT "3916d2be3e61-71" AS exercise_detail_71;
+SELECT "3916d2be3e61-72" AS exercise_detail_72;
+SELECT "3916d2be3e61-73" AS exercise_detail_73;
+SELECT "3916d2be3e61-74" AS exercise_detail_74;
+SELECT "3916d2be3e61-75" AS exercise_detail_75;
+SELECT "3916d2be3e61-76" AS exercise_detail_76;
+SELECT "3916d2be3e61-77" AS exercise_detail_77;
+SELECT "3916d2be3e61-78" AS exercise_detail_78;
+SELECT "3916d2be3e61-79" AS exercise_detail_79;
