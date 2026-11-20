@@ -1,80 +1,80 @@
-﻿CREATE TABLE exercise_02 (
-    id INTEGER PRIMARY KEY,
-    name TEXT NOT NULL,
-    category TEXT NOT NULL,
-    score INTEGER NOT NULL,
-    payload TEXT
-);
-
-INSERT INTO exercise_02 (id, name, category, score, payload) VALUES
-(1, 'Ada', 'A', 98, '{"active":true,"level":3}'),
-(2, 'Linus', 'B', 86, '{"active":false,"level":2}'),
-(3, 'Grace', 'A', 73, '{"active":true,"level":1}'),
-(4, 'Ken', 'C', 64, '{"active":false,"level":1}');
-
-CREATE TABLE category_02 (
-    code TEXT PRIMARY KEY,
-    description TEXT NOT NULL
-);
-( "A", 'Advanced'), ("B", 'Intermediate'), ("C", 'Basic');
-
+CREATE TABLE exercise_02(id INTEGER PRIMARY KEY,name TEXT NOT NULL,category TEXT NOT NULL,score INTEGER NOT NULL);
+CREATE TABLE category_02(code TEXT PRIMARY KEY,description TEXT NOT NULL);
+INSERT INTO exercise_02 VALUES(1,'Ada','A',98),(2,'Linus','B',86),(3,'Grace','A',73),(4,'Ken','C',64);
+INSERT INTO category_02 VALUES('A','Advanced'),('B','Intermediate'),('C','Basic');
 CREATE INDEX exercise_02_score_idx ON exercise_02(score);
-CREATE INDEX exercise_02_category_idx ON exercise_02(category, score);
-
-SELECT id, name, category, score FROM exercise_02 WHERE score >= 70;
+SELECT id,name,category,score FROM exercise_02 WHERE score>=70;
 SELECT DISTINCT category FROM exercise_02;
-SELECT category, COUNT(*) AS members, AVG(score) AS average_score
-FROM exercise_02 GROUP BY category HAVING COUNT(*) >= 1;
-SELECT e.id, e.name, c.description
-FROM exercise_02 e
-INNER JOIN category_02 c ON c.code = e.category;
-SELECT name, score, RANK() OVER (ORDER BY score DESC) AS rank_position
-FROM exercise_02;
-SELECT name, score, SUM(score) OVER (ORDER BY id) AS running_sum
-FROM exercise_02;
-SELECT name, score, LAG(score) OVER (ORDER BY id) AS previous_score
-FROM exercise_02;
-SELECT name, COALESCE(payload, '{}') AS payload
-FROM exercise_02;
-SELECT name FROM exercise_02 e
-WHERE EXISTS (SELECT 1 FROM category_02 c WHERE c.code = e.category);
-WITH ranked AS (
-  SELECT id, name, score, ROW_NUMBER() OVER (ORDER BY score DESC) AS position
-  FROM exercise_02
-)
-SELECT * FROM ranked WHERE position <= 3;
-UPDATE exercise_02 SET score = score + 1 WHERE category = 'C';
-DELETE FROM exercise_02 WHERE score < 0;
+SELECT category,COUNT(*) AS members,AVG(score) AS average FROM exercise_02 GROUP BY category;
+SELECT e.id,e.name,c.description FROM exercise_02 e JOIN category_02 c ON c.code=e.category;
+SELECT name,score,RANK() OVER(ORDER BY score DESC) AS rank_position FROM exercise_02;
+SELECT name,score,SUM(score) OVER(ORDER BY id) AS running_sum FROM exercise_02;
+WITH ranked AS(SELECT id,name,score,ROW_NUMBER() OVER(ORDER BY score DESC) AS position FROM exercise_02)
+SELECT * FROM ranked WHERE position<=3;
 BEGIN;
-INSERT INTO exercise_02(id,name,category,score,payload)
-VALUES(5,'Margaret','B',91,'{"active":true}');
+UPDATE exercise_02 SET score=score+1 WHERE category='C';
 COMMIT;
+SELECT 'where-predicate-18' AS exercise_detail_18;
+SELECT 'where-predicate-19' AS exercise_detail_19;
+SELECT 'where-predicate-20' AS exercise_detail_20;
+SELECT 'where-predicate-21' AS exercise_detail_21;
+SELECT 'where-predicate-22' AS exercise_detail_22;
+SELECT 'where-predicate-23' AS exercise_detail_23;
+SELECT 'where-predicate-24' AS exercise_detail_24;
+SELECT 'where-predicate-25' AS exercise_detail_25;
+SELECT 'where-predicate-26' AS exercise_detail_26;
+SELECT 'where-predicate-27' AS exercise_detail_27;
+SELECT 'where-predicate-28' AS exercise_detail_28;
+SELECT 'where-predicate-29' AS exercise_detail_29;
+SELECT 'where-predicate-30' AS exercise_detail_30;
+SELECT 'where-predicate-31' AS exercise_detail_31;
+SELECT 'where-predicate-32' AS exercise_detail_32;
+SELECT 'where-predicate-33' AS exercise_detail_33;
+SELECT 'where-predicate-34' AS exercise_detail_34;
+SELECT 'where-predicate-35' AS exercise_detail_35;
+SELECT 'where-predicate-36' AS exercise_detail_36;
+SELECT 'where-predicate-37' AS exercise_detail_37;
+SELECT 'where-predicate-38' AS exercise_detail_38;
+SELECT 'where-predicate-39' AS exercise_detail_39;
+SELECT 'where-predicate-40' AS exercise_detail_40;
+SELECT 'where-predicate-41' AS exercise_detail_41;
+SELECT 'where-predicate-42' AS exercise_detail_42;
+SELECT 'where-predicate-43' AS exercise_detail_43;
+SELECT 'where-predicate-44' AS exercise_detail_44;
+SELECT 'where-predicate-45' AS exercise_detail_45;
+SELECT 'where-predicate-46' AS exercise_detail_46;
+SELECT 'where-predicate-47' AS exercise_detail_47;
+SELECT 'where-predicate-48' AS exercise_detail_48;
+SELECT 'where-predicate-49' AS exercise_detail_49;
+SELECT 'where-predicate-50' AS exercise_detail_50;
+SELECT 'where-predicate-51' AS exercise_detail_51;
+SELECT 'where-predicate-52' AS exercise_detail_52;
+SELECT 'where-predicate-53' AS exercise_detail_53;
+SELECT 'where-predicate-54' AS exercise_detail_54;
+SELECT 'where-predicate-55' AS exercise_detail_55;
+SELECT 'where-predicate-56' AS exercise_detail_56;
+SELECT 'where-predicate-57' AS exercise_detail_57;
+SELECT 'where-predicate-58' AS exercise_detail_58;
+SELECT 'where-predicate-59' AS exercise_detail_59;
+SELECT 'where-predicate-60' AS exercise_detail_60;
+SELECT 'where-predicate-61' AS exercise_detail_61;
+SELECT 'where-predicate-62' AS exercise_detail_62;
+SELECT 'where-predicate-63' AS exercise_detail_63;
+SELECT 'where-predicate-64' AS exercise_detail_64;
+SELECT 'where-predicate-65' AS exercise_detail_65;
+SELECT 'where-predicate-66' AS exercise_detail_66;
+SELECT 'where-predicate-67' AS exercise_detail_67;
+SELECT 'where-predicate-68' AS exercise_detail_68;
+SELECT 'where-predicate-69' AS exercise_detail_69;
+SELECT 'where-predicate-70' AS exercise_detail_70;
+SELECT 'where-predicate-71' AS exercise_detail_71;
+SELECT 'where-predicate-72' AS exercise_detail_72;
+SELECT 'where-predicate-73' AS exercise_detail_73;
+SELECT 'where-predicate-74' AS exercise_detail_74;
+SELECT 'where-predicate-75' AS exercise_detail_75;
+SELECT 'where-predicate-76' AS exercise_detail_76;
+SELECT 'where-predicate-77' AS exercise_detail_77;
+SELECT 'where-predicate-78' AS exercise_detail_78;
+SELECT 'where-predicate-79' AS exercise_detail_79;
 DROP TABLE exercise_02;
 DROP TABLE category_02;
-
-SELECT "ba3517287cc1-54" AS exercise_detail_54;
-SELECT "ba3517287cc1-55" AS exercise_detail_55;
-SELECT "ba3517287cc1-56" AS exercise_detail_56;
-SELECT "ba3517287cc1-57" AS exercise_detail_57;
-SELECT "ba3517287cc1-58" AS exercise_detail_58;
-SELECT "ba3517287cc1-59" AS exercise_detail_59;
-SELECT "ba3517287cc1-60" AS exercise_detail_60;
-SELECT "ba3517287cc1-61" AS exercise_detail_61;
-SELECT "ba3517287cc1-62" AS exercise_detail_62;
-SELECT "ba3517287cc1-63" AS exercise_detail_63;
-SELECT "ba3517287cc1-64" AS exercise_detail_64;
-SELECT "ba3517287cc1-65" AS exercise_detail_65;
-SELECT "ba3517287cc1-66" AS exercise_detail_66;
-SELECT "ba3517287cc1-67" AS exercise_detail_67;
-SELECT "ba3517287cc1-68" AS exercise_detail_68;
-SELECT "ba3517287cc1-69" AS exercise_detail_69;
-SELECT "ba3517287cc1-70" AS exercise_detail_70;
-SELECT "ba3517287cc1-71" AS exercise_detail_71;
-SELECT "ba3517287cc1-72" AS exercise_detail_72;
-SELECT "ba3517287cc1-73" AS exercise_detail_73;
-SELECT "ba3517287cc1-74" AS exercise_detail_74;
-SELECT "ba3517287cc1-75" AS exercise_detail_75;
-SELECT "ba3517287cc1-76" AS exercise_detail_76;
-SELECT "ba3517287cc1-77" AS exercise_detail_77;
-SELECT "ba3517287cc1-78" AS exercise_detail_78;
-SELECT "ba3517287cc1-79" AS exercise_detail_79;
