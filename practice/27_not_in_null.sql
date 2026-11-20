@@ -1,0 +1,2 @@
+-- 27. NOT IN 與三值邏輯
+SELECT 5 NOT IN(1,NULL), 5 NOT IN(1,2), NULL IS NULL;

@@ -1,0 +1,711 @@
+[
+  {
+    "id": 7,
+    "slug": "projection",
+    "title": "投影與欄位別名",
+    "expected": [
+      [
+        "Notebook",
+        5000
+      ],
+      [
+        "Pen",
+        1000
+      ],
+      [
+        "Mug",
+        8000
+      ]
+    ],
+    "path": "practice/07_projection.sql"
+  },
+  {
+    "id": 8,
+    "slug": "between",
+    "title": "範圍過濾",
+    "expected": [
+      [
+        "Notebook"
+      ],
+      [
+        "Pen"
+      ]
+    ],
+    "path": "practice/08_between.sql"
+  },
+  {
+    "id": 9,
+    "slug": "missing_orders",
+    "title": "LEFT JOIN 找無訂單客戶",
+    "expected": [
+      [
+        "Mei"
+      ]
+    ],
+    "path": "practice/09_missing_orders.sql"
+  },
+  {
+    "id": 10,
+    "slug": "distinct",
+    "title": "分類去重",
+    "expected": [
+      [
+        "daily"
+      ],
+      [
+        "stationery"
+      ]
+    ],
+    "path": "practice/10_distinct.sql"
+  },
+  {
+    "id": 11,
+    "slug": "pagination",
+    "title": "LIMIT 與 OFFSET",
+    "expected": [
+      [
+        "Notebook"
+      ]
+    ],
+    "path": "practice/11_pagination.sql"
+  },
+  {
+    "id": 12,
+    "slug": "case_stock",
+    "title": "CASE 庫存標籤",
+    "expected": [
+      [
+        "Notebook",
+        "enough"
+      ],
+      [
+        "Pen",
+        "enough"
+      ],
+      [
+        "Mug",
+        "low"
+      ]
+    ],
+    "path": "practice/12_case_stock.sql"
+  },
+  {
+    "id": 13,
+    "slug": "coalesce",
+    "title": "NULL 預設顯示",
+    "expected": [
+      [
+        "Ada",
+        "2026-10-03"
+      ],
+      [
+        "Lin",
+        "2026-11-02"
+      ],
+      [
+        "Mei",
+        "never"
+      ]
+    ],
+    "path": "practice/13_coalesce.sql"
+  },
+  {
+    "id": 14,
+    "slug": "count_groups",
+    "title": "COUNT 與群組",
+    "expected": [
+      [
+        "cancelled",
+        1
+      ],
+      [
+        "paid",
+        3
+      ]
+    ],
+    "path": "practice/14_count_groups.sql"
+  },
+  {
+    "id": 15,
+    "slug": "sum_stock",
+    "title": "SUM 庫存總量",
+    "expected": [
+      [
+        35
+      ]
+    ],
+    "path": "practice/15_sum_stock.sql"
+  },
+  {
+    "id": 16,
+    "slug": "average",
+    "title": "平均與四捨五入",
+    "expected": [
+      [
+        4666.67
+      ]
+    ],
+    "path": "practice/16_average.sql"
+  },
+  {
+    "id": 17,
+    "slug": "minmax",
+    "title": "同時查最小最大",
+    "expected": [
+      [
+        1000,
+        8000
+      ]
+    ],
+    "path": "practice/17_minmax.sql"
+  },
+  {
+    "id": 18,
+    "slug": "having",
+    "title": "HAVING 過濾彙總後結果",
+    "expected": [
+      [
+        "Ada",
+        2
+      ]
+    ],
+    "path": "practice/18_having.sql"
+  },
+  {
+    "id": 19,
+    "slug": "inner_join",
+    "title": "關聯訂單與客戶",
+    "expected": [
+      [
+        1,
+        "Ada"
+      ],
+      [
+        2,
+        "Ada"
+      ],
+      [
+        3,
+        "Lin"
+      ],
+      [
+        4,
+        "Lin"
+      ]
+    ],
+    "path": "practice/19_inner_join.sql"
+  },
+  {
+    "id": 20,
+    "slug": "self_join",
+    "title": "不重複配對的 SELF JOIN",
+    "expected": [
+      [
+        "Ada",
+        "Lin"
+      ],
+      [
+        "Ada",
+        "Mei"
+      ],
+      [
+        "Lin",
+        "Mei"
+      ]
+    ],
+    "path": "practice/20_self_join.sql"
+  },
+  {
+    "id": 21,
+    "slug": "cross_join",
+    "title": "笛卡兒積",
+    "expected": [
+      [
+        9
+      ]
+    ],
+    "path": "practice/21_cross_join.sql"
+  },
+  {
+    "id": 22,
+    "slug": "exists",
+    "title": "EXISTS 購買條件",
+    "expected": [
+      [
+        "Ada"
+      ]
+    ],
+    "path": "practice/22_exists.sql"
+  },
+  {
+    "id": 23,
+    "slug": "not_exists",
+    "title": "NOT EXISTS 未付款客戶",
+    "expected": [
+      [
+        "Mei"
+      ]
+    ],
+    "path": "practice/23_not_exists.sql"
+  },
+  {
+    "id": 24,
+    "slug": "correlated",
+    "title": "相關子查詢查最新日期",
+    "expected": [
+      [
+        "Ada",
+        "2026-10-03"
+      ],
+      [
+        "Lin",
+        "2026-11-02"
+      ],
+      [
+        "Mei",
+        null
+      ]
+    ],
+    "path": "practice/24_correlated.sql"
+  },
+  {
+    "id": 25,
+    "slug": "scalar_subquery",
+    "title": "高於平均價的商品",
+    "expected": [
+      [
+        "Notebook"
+      ],
+      [
+        "Mug"
+      ]
+    ],
+    "path": "practice/25_scalar_subquery.sql"
+  },
+  {
+    "id": 26,
+    "slug": "in",
+    "title": "IN 子查詢",
+    "expected": [
+      [
+        "Pen"
+      ]
+    ],
+    "path": "practice/26_in.sql"
+  },
+  {
+    "id": 27,
+    "slug": "not_in_null",
+    "title": "NOT IN 與三值邏輯",
+    "expected": [
+      [
+        null,
+        1,
+        1
+      ]
+    ],
+    "path": "practice/27_not_in_null.sql"
+  },
+  {
+    "id": 28,
+    "slug": "union",
+    "title": "UNION 會去重",
+    "expected": [
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ]
+    ],
+    "path": "practice/28_union.sql"
+  },
+  {
+    "id": 29,
+    "slug": "union_all",
+    "title": "UNION ALL 保留重複",
+    "expected": [
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ]
+    ],
+    "path": "practice/29_union_all.sql"
+  },
+  {
+    "id": 30,
+    "slug": "intersect",
+    "title": "INTERSECT 集合交集",
+    "expected": [
+      [
+        1
+      ]
+    ],
+    "path": "practice/30_intersect.sql"
+  },
+  {
+    "id": 31,
+    "slug": "except",
+    "title": "EXCEPT 集合差",
+    "expected": [
+      [
+        3
+      ]
+    ],
+    "path": "practice/31_except.sql"
+  },
+  {
+    "id": 32,
+    "slug": "cte_totals",
+    "title": "CTE 拆解訂單彙總",
+    "expected": [
+      [
+        1,
+        11000
+      ],
+      [
+        2,
+        8000
+      ],
+      [
+        3,
+        3000
+      ],
+      [
+        4,
+        8000
+      ]
+    ],
+    "path": "practice/32_cte_totals.sql"
+  },
+  {
+    "id": 33,
+    "slug": "recursive",
+    "title": "遞迴 CTE 序列",
+    "expected": [
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ]
+    ],
+    "path": "practice/33_recursive.sql"
+  },
+  {
+    "id": 34,
+    "slug": "row_number",
+    "title": "分組 ROW_NUMBER",
+    "expected": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        4,
+        2
+      ]
+    ],
+    "path": "practice/34_row_number.sql"
+  },
+  {
+    "id": 35,
+    "slug": "rank",
+    "title": "RANK 價格名次",
+    "expected": [
+      [
+        "Notebook",
+        2
+      ],
+      [
+        "Pen",
+        3
+      ],
+      [
+        "Mug",
+        1
+      ]
+    ],
+    "path": "practice/35_rank.sql"
+  },
+  {
+    "id": 36,
+    "slug": "lag",
+    "title": "LAG 前一筆付款金額",
+    "expected": [
+      [
+        1,
+        null
+      ],
+      [
+        2,
+        11000
+      ],
+      [
+        3,
+        8000
+      ]
+    ],
+    "path": "practice/36_lag.sql"
+  },
+  {
+    "id": 37,
+    "slug": "lead",
+    "title": "LEAD 下一筆日期",
+    "expected": [
+      [
+        1,
+        "2026-10-03"
+      ],
+      [
+        2,
+        "2026-11-01"
+      ],
+      [
+        3,
+        "2026-11-02"
+      ],
+      [
+        4,
+        null
+      ]
+    ],
+    "path": "practice/37_lead.sql"
+  },
+  {
+    "id": 38,
+    "slug": "moving_average",
+    "title": "ROWS 移動平均",
+    "expected": [
+      [
+        1,
+        11000
+      ],
+      [
+        2,
+        9500
+      ],
+      [
+        3,
+        5500
+      ]
+    ],
+    "path": "practice/38_moving_average.sql"
+  },
+  {
+    "id": 39,
+    "slug": "percent_total",
+    "title": "全體佔比視窗",
+    "expected": [
+      [
+        1,
+        50
+      ],
+      [
+        2,
+        36.36
+      ],
+      [
+        3,
+        13.64
+      ]
+    ],
+    "path": "practice/39_percent_total.sql"
+  },
+  {
+    "id": 40,
+    "slug": "ntile",
+    "title": "NTILE 分桶",
+    "expected": [
+      [
+        "Notebook",
+        1
+      ],
+      [
+        "Pen",
+        2
+      ],
+      [
+        "Mug",
+        1
+      ]
+    ],
+    "path": "practice/40_ntile.sql"
+  },
+  {
+    "id": 41,
+    "slug": "first_value",
+    "title": "分類最貴品名",
+    "expected": [
+      [
+        "Notebook",
+        "Notebook"
+      ],
+      [
+        "Pen",
+        "Notebook"
+      ],
+      [
+        "Mug",
+        "Mug"
+      ]
+    ],
+    "path": "practice/41_first_value.sql"
+  },
+  {
+    "id": 42,
+    "slug": "last_value",
+    "title": "LAST_VALUE 的完整 frame",
+    "expected": [
+      [
+        "Notebook",
+        "Pen"
+      ],
+      [
+        "Pen",
+        "Pen"
+      ],
+      [
+        "Mug",
+        "Mug"
+      ]
+    ],
+    "path": "practice/42_last_value.sql"
+  },
+  {
+    "id": 43,
+    "slug": "json_aggregate",
+    "title": "JSON 陣列彙整",
+    "expected": [
+      [
+        "[\"Notebook\",\"Pen\",\"Mug\"]"
+      ]
+    ],
+    "path": "practice/43_json_aggregate.sql"
+  },
+  {
+    "id": 44,
+    "slug": "group_concat",
+    "title": "字串群組彙整",
+    "expected": [
+      [
+        "Ada",
+        "1,2"
+      ],
+      [
+        "Lin",
+        "3,4"
+      ],
+      [
+        "Mei",
+        null
+      ]
+    ],
+    "path": "practice/44_group_concat.sql"
+  },
+  {
+    "id": 45,
+    "slug": "text_functions",
+    "title": "字串函式與長度",
+    "expected": [
+      [
+        "ADA",
+        3,
+        "A"
+      ],
+      [
+        "LIN",
+        3,
+        "L"
+      ],
+      [
+        "MEI",
+        3,
+        "M"
+      ]
+    ],
+    "path": "practice/45_text_functions.sql"
+  },
+  {
+    "id": 46,
+    "slug": "date_functions",
+    "title": "日期修飾與閏月",
+    "expected": [
+      [
+        "2024-02-29",
+        "2026-11"
+      ]
+    ],
+    "path": "practice/46_date_functions.sql"
+  },
+  {
+    "id": 47,
+    "slug": "parameter_cte",
+    "title": "VALUES 作為查詢參數",
+    "expected": [
+      [
+        3
+      ]
+    ],
+    "path": "practice/47_parameter_cte.sql"
+  },
+  {
+    "id": 48,
+    "slug": "upsert",
+    "title": "衝突時更新",
+    "expected": [
+      [
+        1200
+      ]
+    ],
+    "path": "practice/48_upsert.sql"
+  },
+  {
+    "id": 49,
+    "slug": "returning_update",
+    "title": "UPDATE RETURNING",
+    "expected": [
+      [
+        1,
+        8
+      ]
+    ],
+    "path": "practice/49_returning_update.sql"
+  },
+  {
+    "id": 50,
+    "slug": "returning_delete",
+    "title": "外鍵順序與 DELETE RETURNING",
+    "expected": [
+      [
+        4
+      ]
+    ],
+    "path": "practice/50_returning_delete.sql"
+  }
+]

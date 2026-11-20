@@ -40,4 +40,6 @@ class QueryTests(unittest.TestCase):
         self.assertIn('orders_customer_date', ' '.join(str(row) for row in self.query('06_query_plan.sql')))
 
 
-if __name__ == '__main__': unittest.main(verbosity=2)
+if __name__ == '__main__':
+    from check_more import MoreSQL
+    unittest.main(verbosity=2)

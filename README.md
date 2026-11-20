@@ -1,8 +1,12 @@
 # SQL 查詢與交易練習
 
+**目前共 50 個實作練習單元。** 完整題號、來源與執行方式見 [CATALOG.md](CATALOG.md)，機器可讀清單見 [EXERCISES.json](EXERCISES.json)。
+
+以下保留起步練習的說明；其餘題目按完整目錄閱讀。
+
 保留原本 practice.sql、shop.sql、test.sql、mysql.py。新增 practice/ 用同一組購物資料練習查詢，讓 JOIN、彙總與視窗函式的結果互相比較。
 
-需要 Python 3 與 SQLite 3.25 以上，不必另裝資料庫伺服器：
+需要 Python 3 與 SQLite 3.38 以上，不必另裝資料庫伺服器：
 
     python check.py
 

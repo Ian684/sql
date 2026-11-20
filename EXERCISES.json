@@ -1,0 +1,352 @@
+[
+  {
+    "id": 1,
+    "title": "客戶總額",
+    "source": "practice/01_customer_totals.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 2,
+    "title": "月份營收",
+    "source": "practice/02_monthly_revenue.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 3,
+    "title": "分類排名",
+    "source": "practice/03_category_ranking.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 4,
+    "title": "累計營收",
+    "source": "practice/04_running_revenue.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 5,
+    "title": "Savepoint",
+    "source": "practice/05_savepoint.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 6,
+    "title": "查詢計畫",
+    "source": "practice/06_query_plan.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 7,
+    "title": "投影與欄位別名",
+    "source": "practice/07_projection.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 8,
+    "title": "範圍過濾",
+    "source": "practice/08_between.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 9,
+    "title": "LEFT JOIN 找無訂單客戶",
+    "source": "practice/09_missing_orders.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 10,
+    "title": "分類去重",
+    "source": "practice/10_distinct.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 11,
+    "title": "LIMIT 與 OFFSET",
+    "source": "practice/11_pagination.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 12,
+    "title": "CASE 庫存標籤",
+    "source": "practice/12_case_stock.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 13,
+    "title": "NULL 預設顯示",
+    "source": "practice/13_coalesce.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 14,
+    "title": "COUNT 與群組",
+    "source": "practice/14_count_groups.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 15,
+    "title": "SUM 庫存總量",
+    "source": "practice/15_sum_stock.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 16,
+    "title": "平均與四捨五入",
+    "source": "practice/16_average.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 17,
+    "title": "同時查最小最大",
+    "source": "practice/17_minmax.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 18,
+    "title": "HAVING 過濾彙總後結果",
+    "source": "practice/18_having.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 19,
+    "title": "關聯訂單與客戶",
+    "source": "practice/19_inner_join.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 20,
+    "title": "不重複配對的 SELF JOIN",
+    "source": "practice/20_self_join.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 21,
+    "title": "笛卡兒積",
+    "source": "practice/21_cross_join.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 22,
+    "title": "EXISTS 購買條件",
+    "source": "practice/22_exists.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 23,
+    "title": "NOT EXISTS 未付款客戶",
+    "source": "practice/23_not_exists.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 24,
+    "title": "相關子查詢查最新日期",
+    "source": "practice/24_correlated.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 25,
+    "title": "高於平均價的商品",
+    "source": "practice/25_scalar_subquery.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 26,
+    "title": "IN 子查詢",
+    "source": "practice/26_in.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 27,
+    "title": "NOT IN 與三值邏輯",
+    "source": "practice/27_not_in_null.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 28,
+    "title": "UNION 會去重",
+    "source": "practice/28_union.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 29,
+    "title": "UNION ALL 保留重複",
+    "source": "practice/29_union_all.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 30,
+    "title": "INTERSECT 集合交集",
+    "source": "practice/30_intersect.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 31,
+    "title": "EXCEPT 集合差",
+    "source": "practice/31_except.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 32,
+    "title": "CTE 拆解訂單彙總",
+    "source": "practice/32_cte_totals.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 33,
+    "title": "遞迴 CTE 序列",
+    "source": "practice/33_recursive.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 34,
+    "title": "分組 ROW_NUMBER",
+    "source": "practice/34_row_number.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 35,
+    "title": "RANK 價格名次",
+    "source": "practice/35_rank.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 36,
+    "title": "LAG 前一筆付款金額",
+    "source": "practice/36_lag.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 37,
+    "title": "LEAD 下一筆日期",
+    "source": "practice/37_lead.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 38,
+    "title": "ROWS 移動平均",
+    "source": "practice/38_moving_average.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 39,
+    "title": "全體佔比視窗",
+    "source": "practice/39_percent_total.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 40,
+    "title": "NTILE 分桶",
+    "source": "practice/40_ntile.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 41,
+    "title": "分類最貴品名",
+    "source": "practice/41_first_value.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 42,
+    "title": "LAST_VALUE 的完整 frame",
+    "source": "practice/42_last_value.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 43,
+    "title": "JSON 陣列彙整",
+    "source": "practice/43_json_aggregate.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 44,
+    "title": "字串群組彙整",
+    "source": "practice/44_group_concat.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 45,
+    "title": "字串函式與長度",
+    "source": "practice/45_text_functions.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 46,
+    "title": "日期修飾與閏月",
+    "source": "practice/46_date_functions.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 47,
+    "title": "VALUES 作為查詢參數",
+    "source": "practice/47_parameter_cte.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 48,
+    "title": "衝突時更新",
+    "source": "practice/48_upsert.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 49,
+    "title": "UPDATE RETURNING",
+    "source": "practice/49_returning_update.sql",
+    "entry": "",
+    "goal": ""
+  },
+  {
+    "id": 50,
+    "title": "外鍵順序與 DELETE RETURNING",
+    "source": "practice/50_returning_delete.sql",
+    "entry": "",
+    "goal": ""
+  }
+]
