@@ -1,18 +1,8 @@
-CREATE TABLE exercise_36(id INTEGER PRIMARY KEY,name TEXT NOT NULL,category TEXT NOT NULL,score INTEGER NOT NULL);
-CREATE TABLE category_36(code TEXT PRIMARY KEY,description TEXT NOT NULL);
-INSERT INTO exercise_36 VALUES(1,'Ada','A',98),(2,'Linus','B',86),(3,'Grace','A',73),(4,'Ken','C',64);
-INSERT INTO category_36 VALUES('A','Advanced'),('B','Intermediate'),('C','Basic');
-CREATE INDEX exercise_36_score_idx ON exercise_36(score);
-SELECT id,name,category,score FROM exercise_36 WHERE score>=70;
-SELECT DISTINCT category FROM exercise_36;
-SELECT category,COUNT(*) AS members,AVG(score) AS average FROM exercise_36 GROUP BY category;
-SELECT e.id,e.name,c.description FROM exercise_36 e JOIN category_36 c ON c.code=e.category;
-SELECT name,score,RANK() OVER(ORDER BY score DESC) AS rank_position FROM exercise_36;
-SELECT name,score,SUM(score) OVER(ORDER BY id) AS running_sum FROM exercise_36;
-WITH ranked AS(SELECT id,name,score,ROW_NUMBER() OVER(ORDER BY score DESC) AS position FROM exercise_36)
-SELECT * FROM ranked WHERE position<=3;
-BEGIN;
-UPDATE exercise_36 SET score=score+1 WHERE category='C';
-COMMIT;
-DROP TABLE exercise_36;
-DROP TABLE category_36;
+-- Exercise 36: foreign-key
+DROP TABLE IF EXISTS employees;
+DROP TABLE IF EXISTS departments;
+CREATE TABLE departments(id INTEGER PRIMARY KEY,name TEXT NOT NULL);
+CREATE TABLE employees(id INTEGER PRIMARY KEY,name TEXT NOT NULL,department_id INTEGER,score INTEGER NOT NULL CHECK(score BETWEEN 0 AND 100));
+INSERT INTO departments VALUES(1,'Engineering'),(2,'Sales'),(3,'Support');
+INSERT INTO employees VALUES(1,'Ada',1,98),(2,'Linus',1,86),(3,'Grace',2,73),(4,'Ken',3,64),(5,'Margaret',2,91),(6,'Donald',NULL,55);
+PRAGMA foreign_keys=ON;INSERT OR IGNORE INTO departments(id,name) VALUES(5,'Legal');SELECT COUNT(*) AS legal_departments FROM departments WHERE name='Legal';
